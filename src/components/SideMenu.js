@@ -2,7 +2,6 @@ import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import styled from 'styled-components';
 import MenuItem from './MenuItem';
-import XIcon from '../assets/icons/x-solid.svg';
 
 const SideMenuContainer = styled.div`
   position: fixed;
@@ -48,7 +47,7 @@ const SideMenuContainer = styled.div`
 
 const SideMenu = () => {
 
-  const menuItems = ['About', 'Experience', 'Contact Me', 'Resume'];
+  const menuItems = ['About Me', 'Projects', 'Contact Me', 'Resume'];
 
   return (
     <SideMenuContainer>

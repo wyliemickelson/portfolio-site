@@ -17,4 +17,8 @@ export const GlobalStyles = createGlobalStyle`
   a {
     all: unset;
   }
+
+  img {
+    max-width: 100%;
+  }
 `
