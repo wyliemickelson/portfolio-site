@@ -36,9 +36,9 @@ div {
 }
 `
 
-const MenuItem = ({ name }) => {
+const MenuItem = ({ name, closeMenu }) => {
   return (
-    <StyledMenuItem href='#'>
+    <StyledMenuItem href={`#${name}`} onClick={closeMenu}>
       <div className='hover-underline-animation'>{name}</div>
     </StyledMenuItem>
   )

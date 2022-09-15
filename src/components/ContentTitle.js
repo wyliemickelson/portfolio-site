@@ -21,10 +21,10 @@ const StyledContentTitle = styled.div`
   }
 `
 
-const ContentTitle = ({ title}) => {
+const ContentTitle = ({ title }) => {
   return (
     <StyledContentTitle>
-      <h2>{title}</h2>
+      <h2 id={title}>{title}</h2>
       <div></div>
     </StyledContentTitle>
   )

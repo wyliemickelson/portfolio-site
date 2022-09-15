@@ -6,6 +6,7 @@ import MenuItem from './MenuItem';
 const SideMenuContainer = styled.div`
   position: fixed;
   top: 0;
+  z-index: 20;
 
 .bm-menu {
   background: ${props => props.theme.colors.beige};
@@ -49,10 +50,14 @@ const SideMenu = () => {
 
   const menuItems = ['About Me', 'Projects', 'Contact Me', 'Resume'];
 
+  const closeMenu = () => {
+    console.log('close')
+  }
+
   return (
     <SideMenuContainer>
       <Menu right={true} width={250}>
-        {menuItems.map(item => <MenuItem name={item} />)}
+        {menuItems.map(item => <MenuItem name={item} closeMenu={closeMenu} />)}
       </Menu>
     </SideMenuContainer>
   )

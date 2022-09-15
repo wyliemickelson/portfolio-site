@@ -6,6 +6,7 @@ const StyledContentSection = styled.div`
   max-width: ${props => props.width};
   margin: 0 auto;
   margin-top: 4rem;
+  width: fit-content;
 `
 
 const ContentSection = ({ title, children, width }) => {
