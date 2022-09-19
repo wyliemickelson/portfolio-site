@@ -42,7 +42,7 @@ const About = () => {
         <ul>
           <TechnologySector name='' />
           {skills.map(skill => {
-           return <TechnologySector name={skill} />
+           return <TechnologySector name={skill} key={skill} />
           })}
         </ul>
       </div>

@@ -67,7 +67,7 @@ const PageContent = () => {
       </div>
       <ContentSection title='Projects' className='projects'>
         <Projects>
-          {projects.map(project => <Project details={project} />)}
+          {projects.map(project => <Project details={project} key={project} />)}
         </Projects>
       </ContentSection>
       <ContentSection title='Contact Me'>

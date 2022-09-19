@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import styled from 'styled-components';
 import { ReactComponent as ExternalLinkIcon } from '../assets/icons/external-link.svg';
 import { ReactComponent as GithubLogo } from '../assets/icons/github.svg';
@@ -80,12 +79,12 @@ const Project = ({ details }) => {
     <StyledProject background={details.screenshotPath}>
       <h3>{details.title}</h3>
       <p>{lorem}</p>
-      <ul>{details.technologies.map(name => <TechnologySector name={name} />)}</ul>
+      <ul>{details.technologies.map(name => <TechnologySector name={name} key={name} />)}</ul>
       <div>
-        <a href={details.liveLink} target="_blank" ><ExternalLinkIcon /></a>
-        <a href={details.githubLink} target="_blank" ><GithubLogo /></a>
+        <a href={details.liveLink} target="_blank" rel="noreferrer" ><ExternalLinkIcon /></a>
+        <a href={details.githubLink} target="_blank" rel="noreferrer" ><GithubLogo /></a>
       </div>
-      <img src={`${"" + details.screenshotPath}`} />
+      <img src={`${"" + details.screenshotPath}`} alt={'Project preview'} />
     </StyledProject>
   )
 }

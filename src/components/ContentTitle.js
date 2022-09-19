@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledContentTitle = styled.div`
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   gap: clamp(1.5rem, 5%, 3rem);
@@ -23,8 +24,8 @@ const StyledContentTitle = styled.div`
 
 const ContentTitle = ({ title }) => {
   return (
-    <StyledContentTitle>
-      <h2 id={title}>{title}</h2>
+    <StyledContentTitle id={title}>
+      <h2>{title}</h2>
       <div></div>
     </StyledContentTitle>
   )

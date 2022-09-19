@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import styled from 'styled-components';
 import MenuItem from './MenuItem';
@@ -47,17 +47,19 @@ const SideMenuContainer = styled.div`
 `
 
 const SideMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const stateChangeHandler = (newState) => { setIsOpen(newState.isOpen) }
 
   const menuItems = ['About Me', 'Projects', 'Contact Me', 'Resume'];
 
   const closeMenu = () => {
-    console.log('close')
+    setIsOpen(false);
   }
-
+  
   return (
     <SideMenuContainer>
-      <Menu right={true} width={250}>
-        {menuItems.map(item => <MenuItem name={item} closeMenu={closeMenu} />)}
+      <Menu right={true} width={250} isOpen={isOpen} onStateChange={(state) => stateChangeHandler(state)} >
+        {menuItems.map(item => <MenuItem name={item} onClick={closeMenu} key={item} />)}
       </Menu>
     </SideMenuContainer>
   )
