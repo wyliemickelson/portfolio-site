@@ -7,6 +7,8 @@ import About from './About';
 import Projects from './Projects';
 import ContactForm from './ContactForm';
 import ContentTitle from './ContentTitle';
+import { Fade } from 'react-reveal';
+
 
 const StyledPageContent = styled.section`
   width: 85%;
@@ -15,6 +17,19 @@ const StyledPageContent = styled.section`
   .home {
     height: 75vh;
   }
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      }
+    100% {
+      opacity: 1;
+      }
+  }
+
 
   .contact {
     max-width: 500px;
@@ -25,14 +40,6 @@ const StyledPageContent = styled.section`
 const PageContent = () => {
 
   const projects = [
-    // {
-    //   title: '',
-    //   liveLink: '',
-    //   githubLink: '',
-    //   screenshotPath: '',
-    //   technologies: [],
-    //   description: '',
-    // },
     {
       title: 'Entertainment App',
       liveLink: 'https://wyliemickelson.github.io/react-entertainment-web-app/',
@@ -61,7 +68,7 @@ const PageContent = () => {
 
   return (
     <StyledPageContent>
-      <div className='home'>
+      <div className='home fadeIn'>
         <Hero />
         <ContentSection title='About Me' width='700px'>
           <About />
@@ -72,10 +79,12 @@ const PageContent = () => {
           {projects.map(project => <Project details={project} key={project} />)}
         </Projects>
       </ContentSection>
+      <Fade>
       <div className='contact'>
         <ContentTitle title='Get In Touch' />
         <ContactForm />
       </div>
+      </Fade>
     </StyledPageContent>
   )
 }

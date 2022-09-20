@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Fade } from 'react-reveal';
 
 const StyledContentTitle = styled.div`
   padding-top: 6rem;

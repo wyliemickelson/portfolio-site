@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import FormInput from './FormInput';
+import { Fade } from 'react-reveal';
 
 const StyledContactForm = styled.form`
   display: flex;
@@ -25,6 +26,7 @@ const StyledContactForm = styled.form`
 
 const ContactForm = () => {
   return (
+    <Fade>
     <StyledContactForm action="https://formsubmit.co/3fda87a392d824f827323bd45426d877" method="POST" >
       <FormInput type="text" name="name" placeholder='Name' required={true} />
       <FormInput type="email" name="email" required={true} placeholder='Eg. example@email.com' />
@@ -33,6 +35,7 @@ const ContactForm = () => {
       <FormInput type="hidden" name="_next" value="http://localhost:3000/" />
       <button type="submit">Send</button>
     </StyledContactForm>
+    </Fade>
   )
 }
 

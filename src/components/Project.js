@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ProjectDetails from './ProjectDetails';
+import Fade from 'react-reveal/Fade';
 
 const StyledProject = styled.div`
   position: relative;
@@ -28,16 +29,20 @@ const StyledProject = styled.div`
       z-index: -5;
     }
   }
+
+
 `
 
 
 const Project = ({ details }) => {
 
   return (
+    <Fade>
     <StyledProject background={details.screenshotPath}>
       <ProjectDetails details={details} />
       <img src={`${"" + details.screenshotPath}`} alt={'Project preview'} />
     </StyledProject>
+    </Fade>
   )
 }
 

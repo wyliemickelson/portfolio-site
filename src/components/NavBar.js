@@ -26,7 +26,7 @@ const StyledNavBar = styled.nav`
 
 const NavBar = ({ screenWidth }) => {
 
-  const menuItems = ['About Me', 'Projects', 'Contact Me', 'Resume'];
+  const menuItems = ['About Me', 'Projects', 'Get In Touch', 'Resume'];
   const isMobile = screenWidth < 850;
 
   return (
