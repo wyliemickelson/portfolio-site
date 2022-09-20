@@ -6,6 +6,7 @@ import MenuItem from './MenuItem';
 const SideMenuContainer = styled.div`
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 20;
 
 .bm-menu {
@@ -25,8 +26,8 @@ const SideMenuContainer = styled.div`
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 5%;
-  top: 30px;
+  right: 7.5%;
+  top: 20px;
 }
 
 .bm-burger-bars {
@@ -37,8 +38,8 @@ const SideMenuContainer = styled.div`
   position: absolute;
   height: 40px;
   width: 40px;
-  right: 5%;
-  top: 30px;
+  right: 7.5%;
+  top: 7.5%;
 }
 
 .bm-cross {
@@ -46,11 +47,9 @@ const SideMenuContainer = styled.div`
 }
 `
 
-const SideMenu = () => {
+const SideMenu = ({ menuItems }) => {
   const [isOpen, setIsOpen] = useState(false);
   const stateChangeHandler = (newState) => { setIsOpen(newState.isOpen) }
-
-  const menuItems = ['About Me', 'Projects', 'Contact Me', 'Resume'];
 
   const closeMenu = () => {
     setIsOpen(false);

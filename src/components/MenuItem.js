@@ -25,7 +25,7 @@ div {
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: ${props => props.theme.colors.creme};
+  background-color: ${props => props.theme.colors.lightBlue};
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

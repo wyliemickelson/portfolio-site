@@ -5,19 +5,17 @@ import ContentSection from './ContentSection';
 import Project from './Project';
 import About from './About';
 import Projects from './Projects';
+import ContactForm from './ContactForm';
 
 const StyledPageContent = styled.section`
   width: 85%;
   margin: 0 auto;
-  margin-top: 10rem;
 
   .home {
-    height: 90vh;
+    height: 75vh;
   }
 
-  @media only screen and (min-width: 600px) {
-    width: 75%;
-  }
+
 `
 
 const PageContent = () => {
@@ -71,7 +69,7 @@ const PageContent = () => {
         </Projects>
       </ContentSection>
       <ContentSection title='Contact Me'>
-
+        <ContactForm />
       </ContentSection>
     </StyledPageContent>
   )

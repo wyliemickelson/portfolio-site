@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledContentTitle = styled.div`
-  padding-top: 4rem;
+  padding-top: 6rem;
   display: flex;
   align-items: center;
   gap: clamp(1.5rem, 5%, 3rem);
@@ -10,7 +10,7 @@ const StyledContentTitle = styled.div`
   max-width: 500px;
 
   h2 {
-    color: ${props => props.theme.colors.red};
+    color: ${props => props.theme.colors.lightBlue};
     white-space: nowrap;
   }
 
@@ -19,6 +19,10 @@ const StyledContentTitle = styled.div`
     width: 100%;
     height: 1px;
     border-bottom: 1px solid ${props => props.theme.colors.beige};
+  }
+
+  @media only screen and (min-width: 850px) {
+    padding-top: 8rem;
   }
 `
 

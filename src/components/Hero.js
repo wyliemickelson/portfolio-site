@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledHero = styled.section`
   text-align: center;
+  margin-top: 20vh;
   h1 {
     font-size: clamp(37px, 8vw, 70px);
     white-space: nowrap;

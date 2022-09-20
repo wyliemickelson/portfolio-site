@@ -15,6 +15,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.blue};
   }
 
+  p {
+    line-height: 1.3;
+  }
+
   a {
     all: unset;
   }

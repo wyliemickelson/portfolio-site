@@ -1,19 +1,19 @@
 import React from 'react'
 import PageContent from './PageContent'
-import SideMenu from './SideMenu'
 import NavBar from './NavBar'
 import styled from 'styled-components';
+import useWindowDimensions from './useWindowDimensions';
 
 const StyledPage = styled.div`
 
 `
 
 const Page = () => {
+  const { width } = useWindowDimensions();
 
   return (
     <StyledPage>
-      <SideMenu/>
-      <NavBar/>
+      <NavBar screenWidth={width} />
       <PageContent />
     </StyledPage>
   )

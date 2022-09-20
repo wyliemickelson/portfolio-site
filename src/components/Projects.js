@@ -5,7 +5,7 @@ const StyledProjects = styled.section`
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
 `
 

@@ -5,6 +5,7 @@ const StyledTechSector = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: ${props => props.theme.colors.red};
 
   .divider {
     display: block;
