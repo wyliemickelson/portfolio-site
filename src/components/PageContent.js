@@ -6,6 +6,7 @@ import Project from './Project';
 import About from './About';
 import Projects from './Projects';
 import ContactForm from './ContactForm';
+import ContentTitle from './ContentTitle';
 
 const StyledPageContent = styled.section`
   width: 85%;
@@ -15,7 +16,10 @@ const StyledPageContent = styled.section`
     height: 75vh;
   }
 
-
+  .contact {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 `
 
 const PageContent = () => {
@@ -35,7 +39,7 @@ const PageContent = () => {
       githubLink: 'https://github.com/wyliemickelson/react-entertainment-web-app',
       screenshotPath: './project-previews/entertainment.png',
       technologies: ['React', 'Styled-Components', 'Javascript' ],
-      description: '',
+      description: 'A front-end web app for streaming movies and television shows. Click on different tabs to show certain categories, and bookmark media that sounds interesting. Search for a specific show or movie using the bar at the top.',
     },
     {
       title: 'Pomodoro Timer',
@@ -43,7 +47,7 @@ const PageContent = () => {
       githubLink: 'https://github.com/wyliemickelson/pomodoro-app',
       screenshotPath: './project-previews/pomodoro.png',
       technologies: ['Vanilla JS', 'SASS', 'Webpack'],
-      description: '',
+      description: 'An easy to use and simple pomodoro timer app. Choose between three different modes, and open the settings page to edit the length of your timers. Users may also change the accent color and font to their liking.',
     },
     {
       title: 'Ecommerce Product Page',
@@ -51,7 +55,7 @@ const PageContent = () => {
       githubLink: 'https://github.com/wyliemickelson/ecommerce-product-page',
       screenshotPath: './project-previews/product-page.png',
       technologies: ['Vanilla JS', 'SASS', 'Webpack'],
-      description: '',
+      description: 'Browse through different product images and click on the main image to open up a lightbox for a better view. Add the product to your cart and view all items in the top right by clicking the icon.',
     },
   ]
 
@@ -68,9 +72,10 @@ const PageContent = () => {
           {projects.map(project => <Project details={project} key={project} />)}
         </Projects>
       </ContentSection>
-      <ContentSection title='Contact Me'>
+      <div className='contact'>
+        <ContentTitle title='Get In Touch' />
         <ContactForm />
-      </ContentSection>
+      </div>
     </StyledPageContent>
   )
 }

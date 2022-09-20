@@ -8,6 +8,7 @@ const StyledContentTitle = styled.div`
   gap: clamp(1.5rem, 5%, 3rem);
   margin-bottom: 1rem;
   max-width: 500px;
+  width: 100%;
 
   h2 {
     color: ${props => props.theme.colors.lightBlue};

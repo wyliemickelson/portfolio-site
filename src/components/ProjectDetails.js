@@ -52,13 +52,10 @@ svg {
 
 const ProjectDetails = ({ details }) => {
 
-  const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.'
-
-
   return (
     <StyledProjectDetails>
       <h3>{details.title}</h3>
-      <p>{lorem}</p>
+      <p>{details.description}</p>
       <ul>{details.technologies.map(name => <TechnologySector name={name} key={name} />)}</ul>
       <div>
         <a href={details.liveLink} target="_blank" rel="noreferrer" ><ExternalLinkIcon /></a>
