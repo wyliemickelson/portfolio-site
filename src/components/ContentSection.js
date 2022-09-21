@@ -11,7 +11,7 @@ const StyledContentSection = styled.div`
 const ContentSection = ({ title, children, width }) => {
   return (
     <StyledContentSection width={width}>
-      <ContentTitle title={title} />
+     {title && <ContentTitle title={title} />}
       {children}
     </StyledContentSection>
   )

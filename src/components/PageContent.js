@@ -8,7 +8,7 @@ import Projects from './Projects';
 import ContactForm from './ContactForm';
 import ContentTitle from './ContentTitle';
 import { Fade } from 'react-reveal';
-
+import ResumeButton from './ResumeButton';
 
 const StyledPageContent = styled.section`
   width: 85%;
@@ -79,6 +79,11 @@ const PageContent = () => {
           {projects.map(project => <Project details={project} key={project} />)}
         </Projects>
       </ContentSection>
+      <Fade>
+      <ContentSection>
+        <ResumeButton />
+      </ContentSection>
+      </Fade>
       <Fade>
       <div className='contact'>
         <ContentTitle title='Get In Touch' />

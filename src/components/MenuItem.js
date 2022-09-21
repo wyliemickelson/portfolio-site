@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import resume from './Wylie-Mickelson-Resume.pdf'
 
 const StyledMenuItem = styled.a`
 div {
@@ -38,10 +39,16 @@ div {
 
 const MenuItem = ({ name, onClick }) => {
 
+  const isResume = name === 'Resume';
+  const href = isResume ? resume : `#${name}`
+  const target = isResume ? '_blank' : '';
+
   return (
-    <StyledMenuItem href={`#${name}`} onClick={onClick}>
+    <>
+    <StyledMenuItem href={href} onClick={onClick} target={target}>
       <div className='hover-underline-animation'>{name}</div>
     </StyledMenuItem>
+    </>
   )
 }
 

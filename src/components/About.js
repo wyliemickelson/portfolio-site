@@ -35,7 +35,7 @@ const About = () => {
         Hey there! My name is Wylie and I have an immense interest in programming and Web Development.
         I'm always on the hunt for challenges and to discover new technologies to learn. I recently
         obtained my Associate's Degree in Computer Science, and along with it a great amount of
-        self-taught study. I consider myself a quick learner, able to grasp onto concepts very fast.
+        self-taught study.
       </p>
       <div>
         <h3>Experience With</h3>
