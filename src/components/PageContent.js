@@ -45,7 +45,7 @@ const PageContent = () => {
       liveLink: 'https://esports-on-demand.com/',
       githubLink: 'https://github.com/wyliemickelson/esport-vods',
       screenshotPath: './project-previews/esports-on-demand.png',
-      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Styled Components' ],
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB'],
       description: 'A full stack and deployed web application for users to watch recent esports events in a spoiler-free environment.',
     },
     {
