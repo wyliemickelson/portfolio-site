@@ -32,10 +32,7 @@ const About = () => {
   return (
     <StyledAbout>
       <p>
-        Hey there! My name is Wylie and I have an immense interest in programming and Web Development.
-        I'm always on the hunt for challenges and to discover new technologies to learn. I recently
-        obtained my Associate's Degree in Computer Science, and along with it a great amount of
-        self-taught study.
+      I am a passionate and driven software developer with a strong foundation in computer science. With a keen interest in crafting innovative and user-friendly digital experiences, I have honed my skills through self-taught project experience and formal education, with an expected Bachelor's of Computer Science by June 2025. I thrive on the challenges and opportunities that the digital world offers and am dedicated to creating solutions that not only meet but exceed user expectations. My portfolio reflects my commitment to delivering high-quality, efficient, and aesthetically pleasing software solutions.
       </p>
       <div>
         <h3>Experience With</h3>

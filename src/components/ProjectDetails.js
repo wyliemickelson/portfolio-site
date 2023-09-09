@@ -58,7 +58,7 @@ const ProjectDetails = ({ details }) => {
       <p>{details.description}</p>
       <ul>{details.technologies.map(name => <TechnologySector name={name} key={name} />)}</ul>
       <div>
-        <a href={details.liveLink} target="_blank" rel="noreferrer" ><ExternalLinkIcon /></a>
+        {details.liveLink && <a href={details.liveLink} target="_blank" rel="noreferrer" ><ExternalLinkIcon /></a>}
         <a href={details.githubLink} target="_blank" rel="noreferrer" ><GithubLogo /></a>
       </div>
     </StyledProjectDetails>

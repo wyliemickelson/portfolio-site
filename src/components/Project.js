@@ -40,7 +40,7 @@ const Project = ({ details }) => {
     <Fade>
     <StyledProject background={details.screenshotPath}>
       <ProjectDetails details={details} />
-      <img src={`${"" + details.screenshotPath}`} alt={'Project preview'} />
+      {details.screenshotPath && <img src={`${"" + details.screenshotPath}`} alt={'Project preview'} />}
     </StyledProject>
     </Fade>
   )

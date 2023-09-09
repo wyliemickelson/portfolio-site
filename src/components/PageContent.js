@@ -41,6 +41,31 @@ const PageContent = () => {
 
   const projects = [
     {
+      title: 'Esports On Demand',
+      liveLink: 'https://esports-on-demand.com/',
+      githubLink: 'https://github.com/wyliemickelson/esport-vods',
+      screenshotPath: './project-previews/entertainment.png', // TODO
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Styled Components' ],
+      description: 'A full stack and deployed web application for users to watch recent esports events in a spoiler-free environment.',
+    },
+    {
+      title: 'LiquiScraper',
+      liveLink: null,
+      githubLink: 'https://github.com/wyliemickelson/liquiScraper',
+      screenshotPath: null, // TODO
+      technologies: ['Node.js', 'API', 'Promises' ],
+      description: 'A web scraper to fetch esport tournament data using the liquipedia.net API and automatically parse, format and save the collected data to a MongoDB database.',
+    },
+    {
+      title: 'Rate My Professor Helper',
+      liveLink: 'https://chrome.google.com/webstore/detail/rate-my-professor-helper/hdblalhbknkmefefbkbpkonegomjeilo',
+      githubLink: 'https://github.com/wyliemickelson/rate-my-prof-extension',
+      screenshotPath: './project-previews/entertainment.png', // TODO
+      technologies: ['Javascript', 'Node.js', 'Webpack', 'GraphQL'],
+      description: 'As a student, view your college professor ratings from ratemyprofessors.com directly in the same page you use to register for classes. Built to work across any college/university, while similar extensions only target a single school.',
+    },
+
+    {
       title: 'Entertainment App',
       liveLink: 'https://wyliemickelson.github.io/react-entertainment-web-app/',
       githubLink: 'https://github.com/wyliemickelson/react-entertainment-web-app',

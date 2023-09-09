@@ -19,7 +19,7 @@ const Hero = () => {
     <StyledHero>
       <p>Hello, my name is</p>
       <h1>Wylie Mickelson</h1>
-      <h1 className='job-title'>Frontend Developer</h1>
+      <h1 className='job-title'>Software Developer</h1>
     </StyledHero>
   )
 }
