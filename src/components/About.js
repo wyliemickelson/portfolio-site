@@ -27,7 +27,7 @@ const StyledAbout = styled.section`
 
 const About = () => {
 
-  const skills = ['Javascript', 'HTML/CSS', 'SASS', 'React', 'Git/Version Control', 'Webpack', 'npm'];
+  const skills = ['Javascript', 'HTML/CSS', 'SASS', 'React', 'Webpack', 'npm'];
 
   return (
     <StyledAbout>
