@@ -32,7 +32,7 @@ const About = () => {
   return (
     <StyledAbout>
       <p>
-      I am a passionate and driven software developer with a strong foundation in computer science. With a keen interest in crafting innovative and user-friendly digital experiences, I have honed my skills through self-taught project experience and formal education, with an expected Bachelor's of Computer Science by June 2025. I thrive on the challenges and opportunities that the digital world offers and am dedicated to creating solutions that not only meet but exceed user expectations. My portfolio reflects my commitment to delivering high-quality, efficient, and aesthetically pleasing software solutions.
+      I am a passionate and driven software developer with a strong foundation in computer science. With a keen interest in crafting innovative and user-friendly digital experiences, I have honed my skills through self-taught project experience and formal education, with an expected Bachelor's of Computer Science by June 2025. I thrive on the challenges and opportunities that the digital world offers and am dedicated to creating software that not only meets, but exceeds user expectations. My portfolio reflects my commitment to delivering high-quality, efficient, and aesthetically pleasing applications.
       </p>
       <div>
         <h3>Experience With</h3>
